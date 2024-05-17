@@ -1,0 +1,103 @@
+/* ******************** Custom Properties Section ******************** */
+
+/* ***** Root Selector ***** */
+:root {
+  /* Grayscale */
+  --white-color: #fff;
+  --gray-dark-color: #666;
+  --black-color: #000;
+}
+
+/* ***** Formatting styles ***** */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Shadows Into Light", cursive;
+}
+
+/* ***** Html and Body styles ***** */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color);
+}
+
+/* ***** Postcard styles ***** */
+.postcard {
+  background-color: var(--white-color);
+  display: flex;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 60%;
+}
+
+/* ***** Header styles ***** */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Title styles */
+.title {
+  flex: 1;
+}
+
+/* Logo styles */
+.logo img {
+  max-height: 70px;
+}
+
+/* ***** Main styles ***** */
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Main-info styles */
+.main .info {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+/* Main-form styles */
+.main .form {
+  width: 250px;
+}
+
+/* Main-info-input styles */
+.main .form input {
+  min-width: 250px;
+  border: none;
+  border-bottom: var(--gray-dark-color) 1px groove;
+  padding: 10px;
+}
+
+/* ***** Footer styles ***** */
+.footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Bottom info */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: var(--gray-dark-color);
+  border: 0;
+}
